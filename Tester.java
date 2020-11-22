@@ -120,6 +120,8 @@ public class Tester {
     RationalNumber o = new RationalNumber(4,-3);
     RationalNumber s = new RationalNumber(-7,-5);
     System.out.println(o.multiply(q)); // -3/10
+    System.out.println(o.divide(q)); // -4/3
     System.out.println(s.multiply(q)); // 63/200
+    System.out.println(s.divide(q)); // 7/5
   }
 }
