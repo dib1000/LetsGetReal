@@ -11,5 +11,11 @@ public class Tester {
     System.out.println(a);
     a.subtract(c);
     System.out.println(a);
+    b.multiply(a);
+    System.out.println(b);
+    c.multiply(a);
+    System.out.println(c);
+    c.multiply(c);
+    System.out.println(c);
   }
 }
