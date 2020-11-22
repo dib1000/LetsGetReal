@@ -28,10 +28,20 @@ public class Tester {
     System.out.println();
 
     System.out.println("Testing get methods");
+    System.out.println();
+    System.out.println("Testing get RealNumber methods");
     RealNumber x = new RealNumber(0.4324235);
     RealNumber y = new RealNumber(5.343553494943883248234);
     System.out.println(x.getValue());
     System.out.println(y.getValue());
+    System.out.println();
+    System.out.println("Testing get RationalNumber methods");
+    RationalNumber f = new RationalNumber(3,5);
+    RationalNumber nf = new RationalNumber(-3,5);
+    System.out.println(f.getNumerator());
+    System.out.println(f.getDenominator());
+    System.out.println(nf.getNumerator());
+    System.out.println(nf.getDenominator());
     System.out.println();
 
     System.out.println("Testing equals methods");
