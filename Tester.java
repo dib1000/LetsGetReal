@@ -107,5 +107,11 @@ public class Tester {
     System.out.println();
 
     System.out.println("Testing GCD and Reduce");
+    RationalNumber r = new RationalNumber(420,80);
+    RationalNumber R = new RationalNumber(80,-420);
+    RationalNumber nr = new RationalNumber(-10,-6);
+    System.out.println(r);
+    System.out.println(R);
+    System.out.println(nr);
   }
 }

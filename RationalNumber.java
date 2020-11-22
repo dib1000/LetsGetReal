@@ -16,6 +16,9 @@ public class RationalNumber extends RealNumber
     else {
       numerator = nume;
       denominator = deno;
+      if(numerator!=0 && Math.abs(gcd(numerator,denominator))!=1 ) {
+        reduce();
+      }
     }
   }
 
@@ -95,7 +98,9 @@ public class RationalNumber extends RealNumber
   *reduced after construction.
   */
   private void reduce(){
-
+    int divis = gcd(numerator,denominator);
+    numerator = numerator/divis;
+    denominator = denominator/divis;
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**
