@@ -104,5 +104,8 @@ public class Tester {
     System.out.println(nf.getNumerator()); //3
     System.out.println(nf.getDenominator()); //-5
     System.out.println(nf.getValue()); //-0.6
+    System.out.println();
+
+    System.out.println("Testing GCD and Reduce");
   }
 }

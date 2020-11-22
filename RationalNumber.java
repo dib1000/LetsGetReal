@@ -71,8 +71,22 @@ public class RationalNumber extends RealNumber
   *@return the value of the GCD
   */
   private static int gcd(int a, int b){
-    /*use euclids method or a better one*/
-    return 0;
+    int great = 0;
+    int less = 0;
+    if(a<b) {
+      great = b;
+      less = a;
+    }
+    else {
+      great = a;
+      less = b;
+    }
+    while(great%less!=0) {
+      int remainder = great%less;
+      great = less;
+      less = remainder;
+    }
+    return less;
   }
 
   /**
