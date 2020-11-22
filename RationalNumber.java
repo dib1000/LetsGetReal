@@ -9,8 +9,14 @@ public class RationalNumber extends RealNumber
   */
   public RationalNumber(int nume, int deno){
     super(0.0);//this value is ignored!
-    numerator = nume;
-    denominator = deno;
+    if(deno == 0) {
+      numerator = 0;
+      denominator = 1;
+    }
+    else {
+      numerator = nume;
+      denominator = deno;
+    }
   }
 
   public double getValue(){
@@ -51,7 +57,7 @@ public class RationalNumber extends RealNumber
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
-    return "0";
+    return numerator + "/" + denominator;
   }
 
   /**Calculate the GCD of two integers.
