@@ -18,7 +18,9 @@ public class RealNumber{
   *Return the product of this and the other
   */
   public RealNumber multiply(RealNumber other){
-        return null;
+    double val = getValue() * other.getValue();
+    value = val;
+    return this;
   }
 
   /*
@@ -32,7 +34,9 @@ public class RealNumber{
   *Return the this minus the other
   */
   public RealNumber subtract(RealNumber other){
-    return null;
+    double val = getValue() - other.getValue();
+    value = val;
+    return this;
   }
 
 
