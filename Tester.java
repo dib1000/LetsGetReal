@@ -122,8 +122,10 @@ public class Tester {
     System.out.println(o.multiply(q)); // -3/10
     System.out.println(o.divide(q)); // -4/3
     System.out.println(o.add(q)); 
+    System.out.println(o.subtract(q));
     System.out.println(s.multiply(q)); // 63/200
     System.out.println(s.divide(q)); // 7/5
     System.out.println(s.add(q));
+    System.out.println(s.subtract(q));
   }
 }
