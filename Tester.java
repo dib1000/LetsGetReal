@@ -1,7 +1,7 @@
 public class Tester {
   public static void main(String[] args) {
-    //Testing realNumber operations
 
+    System.out.println("Testing realNumber operations");
     RealNumber a = new RealNumber(0.6);
     RealNumber b = new RealNumber(0.8);
     RealNumber c = new RealNumber(-1.5);
@@ -25,5 +25,28 @@ public class Tester {
     System.out.println(c); //2.25
     c.divide(c);
     System.out.println(c); //1.0
+    System.out.println();
+
+    System.out.println("Testing get methods");
+    RealNumber x = new RealNumber(0.4324235);
+    RealNumber y = new RealNumber(5.343553494943883248234);
+    System.out.println(x.getValue());
+    System.out.println(y.getValue());
+    System.out.println();
+
+    System.out.println("Testing equals methods");
+    System.out.println();
+    RealNumber zero = new RealNumber(0.0);
+    RealNumber z = new RealNumber(0.0);
+    RealNumber d = new RealNumber(0.6);
+    System.out.println("equals with zero");
+    System.out.println(zero.equals(d)); //false
+    System.out.println(zero.equals(z)); //true
+    System.out.println(d.equals(zero)); //false
+    System.out.println();
+    System.out.println("equals without zero");
+    System.out.println(d.equals(a)); //true
+    System.out.println(d.equals(b)); //false
+    System.out.println(c.equals(d)); //false
   }
 }

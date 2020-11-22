@@ -47,7 +47,13 @@ public class RealNumber{
   }
 
   public boolean equals(RealNumber other){
-     return true;
+    double thisVal = getValue();
+    double otherVal = other.getValue();
+    if(thisVal==0.0 || otherVal==0.0) {
+      return thisVal==otherVal;
+    }
+    double dif = Math.abs(thisVal-otherVal);
+    return (dif/thisVal)<=(thisVal*0.0001) && (dif/otherVal)<=(otherVal*0.0001);
    }
 
   public String toString(){
