@@ -52,15 +52,26 @@ public class Tester {
     RealNumber z = new RealNumber(0.0);
     RealNumber d = new RealNumber(0.6);
     RealNumber t = new RealNumber(0.43);
+    RationalNumber ze = new RationalNumber(0,1);
     System.out.println("equals with zero");
     System.out.println(zero.equals(d)); //false
     System.out.println(zero.equals(z)); //true
     System.out.println(d.equals(zero)); //false
+    System.out.println(ze.equals(d)); //false
+    System.out.println(ze.equals(z)); //true
+    System.out.println(d.equals(ze)); //false
+    System.out.println(z.equals(ze)); //true
     System.out.println();
     System.out.println("equals without zero");
     System.out.println(d.equals(a)); //true
     System.out.println(d.equals(b)); //false
     System.out.println(c.equals(d)); //false
     System.out.println(t.equals(x)); //false
+    System.out.println();
+    System.out.println("equals with RationalNumber");
+    System.out.println(nf.equals(a)); //false
+    System.out.println(f.equals(a)); //true
+    System.out.println(a.equals(nf)); //false
+    System.out.println(a.equals(f)); //true
   }
 }
