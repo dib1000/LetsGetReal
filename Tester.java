@@ -37,11 +37,13 @@ public class Tester {
     System.out.println();
     System.out.println("Testing get RationalNumber methods");
     RationalNumber f = new RationalNumber(3,5);
-    RationalNumber nf = new RationalNumber(-3,5);
-    System.out.println(f.getNumerator());
-    System.out.println(f.getDenominator());
-    System.out.println(nf.getNumerator());
-    System.out.println(nf.getDenominator());
+    RationalNumber nf = new RationalNumber(-5,3);
+    System.out.println(f.getNumerator()); //3
+    System.out.println(f.getDenominator()); //5
+    System.out.println(f.getValue()); //0.6
+    System.out.println(nf.getNumerator()); //-5
+    System.out.println(nf.getDenominator()); //3
+    System.out.println(nf.getValue()); //1.6666667
     System.out.println();
 
     System.out.println("Testing equals methods");
@@ -49,6 +51,7 @@ public class Tester {
     RealNumber zero = new RealNumber(0.0);
     RealNumber z = new RealNumber(0.0);
     RealNumber d = new RealNumber(0.6);
+    RealNumber t = new RealNumber(0.43);
     System.out.println("equals with zero");
     System.out.println(zero.equals(d)); //false
     System.out.println(zero.equals(z)); //true
@@ -58,5 +61,6 @@ public class Tester {
     System.out.println(d.equals(a)); //true
     System.out.println(d.equals(b)); //false
     System.out.println(c.equals(d)); //false
+    System.out.println(t.equals(x)); //false
   }
 }
