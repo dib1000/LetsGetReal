@@ -73,5 +73,16 @@ public class Tester {
     System.out.println(f.equals(a)); //true
     System.out.println(a.equals(nf)); //false
     System.out.println(a.equals(f)); //true
+    System.out.println();
+
+    System.out.println("Testing reciprocal");
+    f.reciprocal();
+    nf.reciprocal();
+    System.out.println(f.getNumerator()); //5
+    System.out.println(f.getDenominator()); //3
+    System.out.println(f.getValue()); //1.6666667
+    System.out.println(nf.getNumerator()); //3
+    System.out.println(nf.getDenominator()); //-5
+    System.out.println(nf.getValue()); //-0.6
   }
 }
