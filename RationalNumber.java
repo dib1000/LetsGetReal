@@ -16,7 +16,7 @@ public class RationalNumber extends RealNumber
     else {
       numerator = nume;
       denominator = deno;
-      if(numerator!=0 && Math.abs(gcd(numerator,denominator))!=1 ) {
+      if(numerator!=0 && gcd(numerator,denominator)!=1 ) {
         reduce();
       }
     }
@@ -107,7 +107,10 @@ public class RationalNumber extends RealNumber
   *Return a new RationalNumber that is the product of this and the other
   */
   public RationalNumber multiply(RationalNumber other){
-    return null;
+    numerator = getNumerator() * other.getNumerator();
+    denominator = getDenominator() * other.getDenominator();
+    reduce();
+    return this;
   }
 
   /**

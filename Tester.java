@@ -113,5 +113,13 @@ public class Tester {
     System.out.println(r);
     System.out.println(R);
     System.out.println(nr);
+    System.out.println();
+
+    System.out.println("Testing mathematical operations with RationalNumbers");
+    RationalNumber q = new RationalNumber(9,40);
+    RationalNumber o = new RationalNumber(4,-3);
+    RationalNumber s = new RationalNumber(-7,-5);
+    System.out.println(o.multiply(q)); // -3/10
+    System.out.println(s.multiply(q)); // 63/200
   }
 }
