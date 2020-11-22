@@ -42,17 +42,21 @@ public class Tester {
     System.out.println(f.getNumerator()); //3
     System.out.println(f.getDenominator()); //5
     System.out.println(f.getValue()); //0.6
-    System.out.println(f);
+    System.out.println(f); //return 3/5
     System.out.println(nf.getNumerator()); //-5
     System.out.println(nf.getDenominator()); //3
     System.out.println(nf.getValue()); //1.6666667
-    System.out.println(nf);
+    System.out.println(nf); //return -5/3
     System.out.println(zed.getNumerator()); //0
     System.out.println(zed.getDenominator()); //1
     System.out.println(zed.getValue()); //0.0
-    System.out.println(zed);
+    System.out.println(zed); //return 0/1
+    System.out.println();
+    System.out.println("toString exception for certain negative values");
     RationalNumber n = new RationalNumber(-3,-5);
     RationalNumber fn = new RationalNumber(3,-5);
+    System.out.println(n); //return 3/5
+    System.out.println(fn); //return -3/5
     System.out.println();
 
     System.out.println("Testing equals methods");

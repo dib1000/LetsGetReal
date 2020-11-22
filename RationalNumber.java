@@ -57,7 +57,12 @@ public class RationalNumber extends RealNumber
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
-    return numerator + "/" + denominator;
+    if(denominator<0.0) {
+      return numerator*-1 + "/" + denominator*-1;
+    }
+    else {
+      return numerator + "/" + denominator;
+    }
   }
 
   /**Calculate the GCD of two integers.
