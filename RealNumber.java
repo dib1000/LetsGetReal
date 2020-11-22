@@ -27,7 +27,9 @@ public class RealNumber{
   *Return the this divided by the other
   */
   public RealNumber divide(RealNumber other){
-        return null;
+    double val = getValue() / other.getValue();
+    value = val;
+    return this;
   }
 
   /*
