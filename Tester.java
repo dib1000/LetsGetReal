@@ -74,6 +74,13 @@ public class Tester {
     System.out.println(a.equals(nf)); //false
     System.out.println(a.equals(f)); //true
     System.out.println();
+    System.out.println("equals with two RationalNumbers");
+    RationalNumber ef = new RationalNumber(3,5);
+    RationalNumber rf = nf.reciprocal();
+    System.out.println(ef.equals(f)); //true
+    System.out.println(ef.equals(nf)); //false
+    System.out.println(ef.equals(rf)); //false
+    System.out.println();
 
     System.out.println("Testing reciprocal");
     f.reciprocal();
