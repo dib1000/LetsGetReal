@@ -64,9 +64,15 @@ public class RationalNumber extends RealNumber
   */
   public String toString(){
     if(denominator<0.0) {
+      if(denominator==-1) {
+        return ""+numerator*-1;
+      }
       return numerator*-1 + "/" + denominator*-1;
     }
     else {
+      if(denominator==1) {
+        return ""+numerator;
+      }
       return numerator + "/" + denominator;
     }
   }
