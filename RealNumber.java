@@ -9,36 +9,31 @@ public class RealNumber{
   *Return the sum of this and the other
   */
   public RealNumber add(RealNumber other){
-    double val = getValue() + other.getValue();
-    value = val;
-    return this;
+    RealNumber n = new RealNumber(getValue()+other.getValue());
+    return n;
   }
 
   /*
   *Return the product of this and the other
   */
   public RealNumber multiply(RealNumber other){
-    double val = getValue() * other.getValue();
-    value = val;
-    return this;
+    RealNumber n = new RealNumber(getValue()*other.getValue());
+    return n;
   }
 
   /*
   *Return the this divided by the other
   */
   public RealNumber divide(RealNumber other){
-    double val = getValue() / other.getValue();
-    value = val;
-    return this;
+    RealNumber n = new RealNumber(getValue()/other.getValue());
+    return n;
   }
-
   /*
   *Return the this minus the other
   */
   public RealNumber subtract(RealNumber other){
-    double val = getValue() - other.getValue();
-    value = val;
-    return this;
+    RealNumber n = new RealNumber(getValue()-other.getValue());
+    return n;
   }
 
 
@@ -53,7 +48,7 @@ public class RealNumber{
       return thisVal==otherVal;
     }
     double dif = Math.abs(thisVal-otherVal);
-    return (dif/thisVal)<=(thisVal*0.0001) && (dif/otherVal)<=(otherVal*0.0001);
+    return (dif/thisVal)<=(thisVal*0.00001) && (dif/otherVal)<=(otherVal*0.00001);
    }
 
   public String toString(){
