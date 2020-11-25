@@ -17,6 +17,18 @@ public class NumberTester{
     System.out.println(c.equals(rc));
     System.out.println(c.equals(ra));
     System.out.println(c.equals(rb));
+    System.out.println();
+
+    System.out.println("TESTING COMPARES METHOD");
+    System.out.println(b.compareTo(rb));
+    System.out.println(b.compareTo(ra));
+    System.out.println(c.compareTo(rb));
+    System.out.println(b.compareTo(b));
+    System.out.println(b.compareTo(a));
+    System.out.println(c.compareTo(b));
+    System.out.println(rb.compareTo(rb));
+    System.out.println(rb.compareTo(ra));
+    System.out.println(rc.compareTo(rb));
 
   }
 }

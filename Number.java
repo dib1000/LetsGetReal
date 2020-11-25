@@ -6,7 +6,14 @@ public abstract class Number{
   return a positive value when this Number is larger than the other Number
   */
   public int compareTo(Number other){
-    return 0;
+    if(equals(other)) {
+      return 0;
+    }
+    double dif = getValue()-other.getValue();
+    if(dif>0) {
+      return 1;
+    }
+    return -1;
   }
 
   /*
