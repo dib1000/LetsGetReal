@@ -29,6 +29,24 @@ public class NumberTester{
     System.out.println(rb.compareTo(rb));
     System.out.println(rb.compareTo(ra));
     System.out.println(rc.compareTo(rb));
+    System.out.println();
 
+    System.out.println("TESTING RationalNumber toString()");
+    System.out.println();
+    System.out.println("Testing 0 numerator");
+    RationalNumber z = new RationalNumber(0,2);
+    RationalNumber nz = new RationalNumber(0,-2);
+    System.out.println(z);
+    System.out.println(nz);
+    System.out.println();
+    System.out.println("Testing 1 denominator");
+    RationalNumber d = new RationalNumber(5,1);
+    RationalNumber e = new RationalNumber(-5,1);
+    RationalNumber f = new RationalNumber(5,-1);
+    RationalNumber g = new RationalNumber(-5,-1);
+    System.out.println(d);
+    System.out.println(e);
+    System.out.println(f);
+    System.out.println(g);
   }
 }
